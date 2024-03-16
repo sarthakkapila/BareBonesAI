@@ -21,7 +21,7 @@ To install MiniTorch, follow these steps:
 
 ### Contributing
 
-If you're interested in improving MiniTorch or adding new features just clear a PR :) .
+If you're interested in improving MiniTorch or adding new features just create a PR :) .
 
 ### Running tests
 
