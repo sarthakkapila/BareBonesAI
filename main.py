@@ -75,3 +75,51 @@ class Flatten:
     def parameters(self):
         
         return []
+
+# ---------------------------------------NORMALIZATION------------------------------------------------
+
+class BatchNorm1d:
+    """
+    BatchNorm1d normalization layer.
+
+        eps (float): Small value added to the denominator for numerical stability.
+        momentum (float): Momentum factor for updating running mean and variance.
+        alpha & beta: hyperparameters
+
+        Xhat = (X - mean(X))/sqrt(var + eps)
+        Y = gammaXhat + beta
+    """
+    def __init__(self, dim, eps=1e-5, momentum=0.1):
+        self.eps = eps
+        self.momentum = momentum
+        self.training = True
+
+        self.gamma = torch.ones(dim)
+        self.beta = torch.zeros(dim)
+
+        self.running_mean = torch.zeros(dim)
+        self.running_var = torch.ones(dim)
+  
+    def __call__(self, X):
+
+        if self.training:
+        if X.ndim == 2:
+            dim = 0
+        elif X.ndim == 3:
+            dim = (0,1)
+        Xmean = X.mean(dim, keepdim=True) # batch mean
+        Xvar = X.var(dim, keepdim=True) # batch variance
+        else:
+        Xmean = self.running_mean
+        Xvar = self.running_var
+        Xhat = (X - Xmean) / torch.sqrt(Xvar + self.eps) # normalize to unit variance
+        self.out = self.gamma * Xhat + self.beta
+
+        if self.training:
+        with torch.no_grad():
+            self.running_mean = (1 - self.momentum) * self.running_mean + self.momentum * xmean
+            self.running_var = (1 - self.momentum) * self.running_var + self.momentum * xvar
+        return self.out
+  
+    def parameters(self):
+        return [self.gamma, self.beta]
