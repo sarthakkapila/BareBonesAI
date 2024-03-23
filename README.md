@@ -1,18 +1,18 @@
-# MiniTorch
+# MiniProp
 A mini autograd engine and a neural net library inspired by PyTorch.
 Implements backpropagation over a dynamically built DAG and a small neural networks library on top of it with a PyTorch-like API.  
 Potentially useful for educational purposes.
 
 ### Installation
-To install MiniTorch, follow these steps:
+To install MiniProp, follow these steps:
 
-1. Clone the MiniTorch repository:
+1. Clone the MiniProp repository:
    ```bash
-   git clone https://github.com/sarthakkapila/MiniTorch.git
+   git clone https://github.com/sarthakkapila/MiniProp.git
    ```
-2. Navigate to the MiniTorch directory:
+2. Navigate to the MiniProp directory:
    ```bash
-   cd MiniTorch
+   cd MiniProp
    ```
 3. For a regular installation, run:
     ```python
@@ -21,7 +21,7 @@ To install MiniTorch, follow these steps:
 
 ### Contributing
 
-If you're interested in improving MiniTorch or adding new features just create a PR :) .
+If you're interested in improving MiniProp or adding new features just create a PR :) .
 
 ### Running tests
 
