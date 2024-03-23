@@ -107,12 +107,12 @@ class BatchNorm1d:
             dim = 0
         elif X.ndim == 3:
             dim = (0,1)
-        Xmean = X.mean(dim, keepdim=True) # batch mean
-        Xvar = X.var(dim, keepdim=True) # batch variance
+        Xmean = X.mean(dim, keepdim=True)
+        Xvar = X.var(dim, keepdim=True)
         else:
         Xmean = self.running_mean
         Xvar = self.running_var
-        Xhat = (X - Xmean) / torch.sqrt(Xvar + self.eps) # normalize to unit variance
+        Xhat = (X - Xmean) / torch.sqrt(Xvar + self.eps)
         self.out = self.gamma * Xhat + self.beta
 
         if self.training:
