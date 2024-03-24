@@ -1,6 +1,6 @@
 # BarebonesAI ![BarebonesAI Logo](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0244bae0-1632-4497-ab6f-7b93b6261430/dahvf7z-5c330624-5fc9-4f15-9f0f-aa1b7869dea4.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyNDRiYWUwLTE2MzItNDQ5Ny1hYjZmLTdiOTNiNjI2MTQzMFwvZGFodmY3ei01YzMzMDYyNC01ZmM5LTRmMTUtOWYwZi1hYTFiNzg2OWRlYTQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pousrH_NlpSA0oY9VJfUmkGSkxIxwUJ857ZvffY2TOk)
 
-
+## Under construction 🚧
 BarebonesAI is a project aimed at providing a hands-on learning experience in the field of artificial intelligence and deep learning without relying on high-level libraries or frameworks. This library has been implemented by just using Numpy and Math :) 
 
 ## Overview
